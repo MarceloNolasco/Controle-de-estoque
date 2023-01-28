@@ -1,0 +1,33 @@
+body {
+  background: rgb(180, 173, 176);
+  background: radial-gradient(
+    circle,
+    rgba(180, 173, 176, 1) 0%,
+    rgba(24, 54, 89, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 50%;
+  height: 40vh;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 20px 0;
+}
+
+button {
+  margin-top: 20px;
+  width: 60%;
+}

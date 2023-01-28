@@ -1,3 +1,35 @@
-<p>
-  login works!
-</p>
+<body>
+  <mat-card class="mat-elevation-z4 card">
+    <mat-card-title class="title"> Controle de estoque </mat-card-title>
+    <form [formGroup]="formLogin">
+      <mat-form-field>
+        <input
+          formControlName="name"
+          matInput
+          matInput
+          type="text"
+          placeholder="Digite seu nome"
+          name="name"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          formControlName="password"
+          matInput
+          type="password"
+          placeholder="Digite sua senha"
+          name="password"
+        />
+      </mat-form-field>
+    </form>
+
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="goToHome()"
+      [disabled]="formLogin.invalid"
+    >
+      Entrar
+    </button>
+  </mat-card>
+</body>
