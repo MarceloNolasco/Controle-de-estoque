@@ -1,18 +1,29 @@
 <aside>
   <mat-sidenav-container>
     <mat-sidenav mode="side" opened fixedInViewport="" class="sidenav">
-      <mat-list-item>
+      <span>
         <a href="">
-          <mat-icon> home </mat-icon>
-          Início
+          <img src="assets/logo.png" alt="" />
         </a>
-      </mat-list-item>
-      <mat-list-item>
-        <a href="">
-          <mat-icon> inventory_2</mat-icon>
-          Produtos
-        </a>
-      </mat-list-item>
+      </span>
+      <mat-nav-list class="list">
+        <mat-list-item>
+          <a routerLink="home-product">
+            <mat-icon> home </mat-icon>
+            Início
+          </a>
+        </mat-list-item>
+
+        <mat-list-item>
+          <a href="">
+            <mat-icon> inventory_2</mat-icon>
+            Produtos
+          </a>
+        </mat-list-item>
+      </mat-nav-list>
     </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
   </mat-sidenav-container>
 </aside>

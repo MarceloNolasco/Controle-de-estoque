@@ -1,3 +1,31 @@
 .sidenav {
   width: 200px;
+  background: #f5f5f5;
+}
+
+img {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 150px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.list a {
+  text-decoration: none;
+  color: rgb(238, 219, 13);
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+.list,
+mat-icon {
+  color: rgb(237, 85, 25);
+  font-size: 2rem;
+  margin-right: 20px;
+  vertical-align: sub;
 }
