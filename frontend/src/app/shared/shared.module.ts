@@ -4,23 +4,11 @@ import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    SidenavComponent,
-    FooterComponent,
-    HomeLayoutComponent,
-  ],
+  declarations: [HeaderComponent, SidenavComponent, FooterComponent],
   imports: [CommonModule, RouterModule, MaterialModule],
-  exports: [
-    MaterialModule,
-    HeaderComponent,
-    SidenavComponent,
-    FooterComponent,
-    HomeLayoutComponent,
-  ],
+  exports: [MaterialModule, HeaderComponent, SidenavComponent, FooterComponent],
 })
 export class SharedModule {}
