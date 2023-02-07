@@ -1,9 +1,29 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Rodapé Durafloor",
-            "amount": 14
-        }
-    ]
+  "products": [
+    {
+      "name": "Rodapé Durafloor Vista 6 cm (unidade)",
+      "price": "29.90",
+      "id": 6
+    },
+    {
+      "name": "Rodapé Durafloor Clean 8 cm (unidade)",
+      "price": "37.90",
+      "id": 7
+    },
+    {
+      "name": "Perfil Transição",
+      "price": "37.9",
+      "id": 9
+    },
+    {
+      "name": "Perfil Redutor",
+      "price": "58.90",
+      "id": 10
+    },
+    {
+      "name": "Manta m2",
+      "price": "7",
+      "id": 11
+    }
+  ]
 }
