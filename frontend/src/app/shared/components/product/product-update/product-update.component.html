@@ -1,0 +1,27 @@
+<mat-card class="mat-elevation-z4">
+  <mat-card-title> Alterar o produto </mat-card-title>
+  <form [formGroup]="productForm">
+    <mat-form-field>
+      <input placeholder="Nome" matInput formControlName="name" name="name" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        placeholder="Preço(R$)"
+        matInput
+        formControlName="price"
+        name="price"
+      />
+    </mat-form-field>
+  </form>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="updateProduct()"
+    [disabled]="productForm.invalid"
+  >
+    Alterar
+  </button>
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>

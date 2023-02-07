@@ -1,0 +1,49 @@
+<mat-card class="mat-elevation-z4">
+  <mat-card-title> Cadastrar o produto </mat-card-title>
+  <form [formGroup]="productForm">
+    <mat-form-field>
+      <input placeholder="Nome" matInput formControlName="name" name="name" />
+    </mat-form-field>
+    <p>
+      <span
+        *ngIf="
+          productFormControl.name.touched &&
+          productFormControl.name.errors?.required
+        "
+        class="text-danger"
+      >
+        Nome obrigatório
+      </span>
+    </p>
+
+    <mat-form-field>
+      <input
+        placeholder="Preço(R$)"
+        matInput
+        formControlName="price"
+        name="price"
+      />
+    </mat-form-field>
+    <p>
+      <span
+        *ngIf="
+          productFormControl.price.touched &&
+          productFormControl.price.errors?.required
+        "
+        class="text-danger"
+      >
+        Preço obrigatório
+      </span>
+    </p>
+  </form>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="createProduct()"
+    [disabled]="productForm.invalid"
+  >
+    Cadastrar
+  </button>
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>

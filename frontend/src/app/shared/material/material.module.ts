@@ -8,6 +8,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   imports: [CommonModule],
@@ -20,6 +22,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
+    MatSnackBarModule,
+    MatTableModule,
   ],
 })
 export class MaterialModule {}
